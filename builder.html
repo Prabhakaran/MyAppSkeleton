@@ -333,7 +333,7 @@
             </div>
           </div>
           <div class="row form-buttons">
-            <a class="btn-flat " href="#" onclick="gotoStep(2);">Back</a>
+            <a class="btn-flat " href="javascript:;" onclick="goBack(1);">Back</a>
             <button class="btn waves-effect waves-light" type="submit" name="action" onclick="gotoStep(3);">Next
               <i class="material-icons right">send</i>
             </button>
@@ -352,12 +352,12 @@
         <div class="form-container-sm">
           <div class="row">
             <div class="input-field col s12">
-              <input id="email2" name="email" type="email" class="validate" required="" aria-required="true">
+              <input id="email2" type="email" class="validate" required="" aria-required="true">
               <label for="email2">Email</label>
             </div>
           </div>
           <div class="row form-buttons">
-            <a class="btn-flat " href="#">Back</a>
+            <a class="btn-flat " href="#" onclick="goBack(2)">Back</a>
             <button class="btn waves-effect waves-light" type="submit" name="action" onclick="gotoStep(4)">Next
               <i class="material-icons right">send</i>
             </button>
@@ -382,7 +382,7 @@
             </div>
           </div>
           <div class="row form-buttons">
-            <a class="btn-flat " href="#">Back</a>
+            <a class="btn-flat " href="#" onclick="goBack(3)">Back</a>
             <button class="btn waves-effect waves-light" type="submit" name="action" onclick="gotoStep(5)">Build Your Resume
               <i class="material-icons right">send</i>
             </button>
@@ -841,9 +841,9 @@
 
               <div class="clearfix"></div>
               <div class="row form-buttons">
-                <a class="btn-flat " href="#" onclick="gotoStep(4)">Back</a>
-                <button class="btn waves-effect waves-light" type="submit" name="action"  onclick="location.href='preview-resume.html'"><i class="material-icons left">visibility</i> Preview Resume
-                </button>
+                <a class="btn-flat " href="#" onclick="goBack(4)">Back</a>
+                <a class="btn waves-effect waves-light" href="preview-resume.html"><i class="material-icons left">visibility</i> Preview Resume
+                </a>
               </div>
 
             </div>
