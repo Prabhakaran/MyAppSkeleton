@@ -52,9 +52,19 @@
 							<p class="login-text hide">Password has been sent to your email address. <a href="#" class="back_to_login" >Login</a></p>
 		        </div>
 		        <div class="input-field col s12">
-	            <a href="#!" class="btn waves-effect waves-light col s12" onclick="$('p.login-text').removeClass('hide')">Send Password</a>
+	            <a href="#!" class="btn waves-effect waves-light col s12" onclick="$('#modal_pass').openModal(); $('p.login-text').removeClass('hide')">Send Password</a>
 	          </div>
 		      </div>
+		      <div id="modal_pass" class="modal" style="width:400px">
+			    <div class="modal-content">
+			      <h5>Password Sent!</h5>
+			      <p>Password has been sent to your email address. Please check your inbox.</p>
+			    </div>
+			    <div class="modal-footer">
+			      <a href="#!" class=" modal-action modal-close waves-effect waves-green btn-flat">OK</a>
+			    </div>
+			  </div>
+
 		    </form>
 
 		    <form id="register_form" style="display:none">
