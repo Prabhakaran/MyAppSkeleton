@@ -148,7 +148,7 @@ function  fnRenderBuilderResumeComponents(){
     $(this).parent().parent().find('.editable, .actions').addClass('hide');
   });
 
-  $('#editor_summary, #editor_school_1, #editor_job_desc, #editor_hobbies, #editor_ref_desc').trumbowyg({
+  $('#editor_summary, #editor_school_1, #editor_job_desc').trumbowyg({
     btns: ['viewHTML',
     '|', 'formatting',
     '|', 'btnGrp-design',
