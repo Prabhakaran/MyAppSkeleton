@@ -165,7 +165,7 @@ nav ul a, nav .brand-logo {
   display: inline-block;
 }
 .build-section .card-content{
-  min-height: 150px;
+  min-height: 130px;
 }
 .build-section h5{
   font-weight: bold;
@@ -275,4 +275,25 @@ nav ul a, nav .brand-logo {
 }
 .theme1 .skills-data i.gray{
   color: #ddd;
+}
+
+/** FIXES for error messages https://github.com/Dogfalo/materialize/issues/1562*/
+ label {
+    width: 100%;
+}
+.input-field label {
+    font-size: 0.8rem;
+    -webkit-transform: translateY(-140%);
+    -moz-transform: translateY(-140%);
+    -ms-transform: translateY(-140%);
+    -o-transform: translateY(-140%);
+    transform: translateY(-140%);
+}
+
+/*Added Sep 05*/
+.l-separator{
+  color: #ccc;
+  font-size: 16px;
+  display: inline-block;
+  margin: 0 6px;
 }
