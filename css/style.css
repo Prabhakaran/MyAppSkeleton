@@ -212,6 +212,7 @@ nav ul a, nav .brand-logo {
 .s-item{
   border-bottom: 1px solid #eee;
   padding-bottom: 10px;
+  margin-bottom: 15px;
 }
 .s-actions{
   position: absolute;
@@ -221,17 +222,27 @@ nav ul a, nav .brand-logo {
   font-size: 14px;
 }
 .btn-small{
-  font-size: 13px;
-  padding:5px 8px;
+  font-size: 11px;
+  padding:2px 8px;
   line-height: normal;
   height: initial;
-  font-weight: 300;
+  font-weight: 400;
+  background-color: #2185D0;
+  text-transform: none;
+}
+.btn-small:hover{
+ background-color: #1678c2; 
 }
 .btn-small i{
   font-size: 15px;
 }
 .delete-btn{
-  background-color: 
+  background-color: #e0e1e2;
+  color: #666;
+}
+.delete-btn:hover{
+  background-color: #cacbcd;
+  color: #222;
 }
 
 .preview-section{
@@ -296,4 +307,21 @@ nav ul a, nav .brand-logo {
   font-size: 16px;
   display: inline-block;
   margin: 0 6px;
+}
+
+.btn-simple, .btn-simple:hover{
+  font-size: 13px;
+  padding:5px 8px;
+  line-height: normal;
+  height: initial;
+  font-weight: 300; 
+  text-transform: none;
+  background-color: #e0e1e2;
+  color: #666;
+  font-weight: 600;
+  box-shadow: none;
+}
+.btn-simple:hover{
+  background-color: #cacbcd;
+  color: #222;
 }
