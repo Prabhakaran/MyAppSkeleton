@@ -1,0 +1,25 @@
+.user-profile-container{
+	font-family: 'Open Sans', sans-serif;
+}
+.btn, .btn:hover{
+	box-shadow: none;
+}
+.build-section{
+	box-shadow: none;
+	border:0 !important;
+	border-top:1px solid #f3f3f3 !important;
+	margin:0;
+}
+.col-profile{
+	border: 1px solid #e0e1e2;
+	padding: 0 !important;
+}
+.profile-footer{
+	margin-top: 20px;
+}
+strong{
+	font-weight: 700;
+}
+.build-section.card .card-content .card-title{
+	font-weight: 700;
+}
