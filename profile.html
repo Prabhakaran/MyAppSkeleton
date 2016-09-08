@@ -1,0 +1,598 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0"/>
+  <title>Build User Profile</title>
+
+  <!-- CSS  -->
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,800" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet"> 
+  <link href="css/m-icon.css" type="text/css" rel="stylesheet" />
+  <link href="css/materialize.css" type="text/css" rel="stylesheet" />
+  <link href="editor/trumbowyg.css" rel="stylesheet">
+  <link href="css/style.css" type="text/css" rel="stylesheet" />
+  <link href="css/steps.css" type="text/css" rel="stylesheet" />
+  <link href="css/profile.css" type="text/css" rel="stylesheet" />
+  <link href="css/responsive.css" type="text/css" rel="stylesheet" />
+</head>
+<body>
+  <div class="navbar-fixed">
+    <nav class="white" role="navigation">
+        <div class="nav-wrapper container">
+          <a id="logo-container" href="index.html" class="brand-logo"><img src="images/new_logo.png"></a>
+          <ul class="right hide-on-med-and-down">
+            <li><a href="#">Dashboard</a></li>
+            <li><a href="#">Jobs</a></li>
+            <li><a class="dropdown-button" href="#!" data-activates="user_menu">Steve<i class="material-icons right">arrow_drop_down</i></a></li>
+          </ul>
+          <ul id="user_menu" class="dropdown-content">
+            <li><a href="#!">Profile</a></li>
+            <li><a href="#!">Messages</a></li>
+            <li class="divider"></li>
+            <li><a href="#!">Sign out</a></li>
+          </ul>
+          <!-- <a href="#" data-activates="nav-mobile" class="button-collapse"><i class="material-icons">menu</i></a> -->
+        </div>
+    </nav>
+  </div>
+
+  <div class="container">
+    <div class="section">
+      <div class="spacing"></div>
+      
+      <div class="user-profile-container">
+        <div class="bulid-resume">
+        <div>
+          
+          <div class="spacing"></div>
+          <div class="row">
+            <div class="col s9">
+              <div class="card-content">
+                <h5 class="center">Front End Developer</h5> 
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col s12 m9">
+              <div class="col-profile">
+                <div class="card build-section scrollspy" id="contact_details">
+                  <a class="btn-flat edit-btn waves-effect waves-teal"><i class="material-icons left">mode_edit</i>Edit</a>
+                  <div class="card-content">
+                    <!-- <span class="card-title">Contact Details</span>  -->
+                    <div class="contact-details viewable">
+                      <div class="row">
+                        <div class="col s2">
+                          <img src="images/new_logo.png">
+                        </div>
+                        <div class="col s10">
+                          <h5>Jane Smith</h5>
+                          <!-- <i>Your Address</i> <br> -->
+                          Chennai, Tamilnadu <br>
+                          +1 (555) 555 - 5555 <br>
+                          jane.smith@gmail.com 
+                        </div>
+                      </div>
+                      
+                    </div>
+                    <div class="contact-details editable hide">
+                      <div class="row">
+                        <div class="input-field col s6">
+                          <input value="Jane" id="first_name" type="text">
+                          <label for="first_name">First Name</label>
+                        </div>
+                        <div class="input-field col s6">
+                          <input value="Smith" id="last_name" type="text">
+                          <label for="last_name">Last Name</label>
+                        </div>
+                      </div>
+                      <div class="row">
+                        <div class="input-field col s12">
+                          <input value="" id="street_address" type="text">
+                          <label for="street_address">Street Address</label>
+                        </div>
+                      </div>
+                      <div class="row">
+                        <div class="input-field col s6">
+                          <input value="Chennai, Tamil Nadu, India" id="location" type="text">
+                          <label for="location">Cith, State, Country</label>
+                        </div>
+                        <div class="input-field col s6">
+                          <input value="" id="zipcode" type="text">
+                          <label for="zipcode">Zip Code</label>
+                        </div>
+                      </div>
+                      <div class="row">
+                        <div class="input-field col s6">
+                          <input value="" id="phone" type="text">
+                          <label for="phone">Phone</label>
+                        </div>
+                        <div class="input-field col s6">
+                          <input value="" id="email" type="email">
+                          <label for="email">Email Addres</label>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="card-action actions right-align hide">
+                    <button class="cancel-btn btn-flat">Cancel</button>
+                    <button class="btn waves-effect waves-light">Update</button>
+                  </div>
+                </div>
+
+                <div class="card build-section scrollspy" id="summary">
+                  <a class="btn-flat edit-btn waves-effect waves-teal"><i class="material-icons left">mode_edit</i>Edit</a>
+                  <div class="card-content">
+                    <span class="card-title">PROFESSIONAL STATEMENT</span> 
+                    <div class="viewable">
+                      <p>The great thing about <strong>MY INDUSTRY</strong> is that it's always improving and making new strides. With over <strong><strong>YEARS</strong> </strong>of experience in this industry, my passion has yet to diminish. During my tenure, I've seen this sector adapt and become innovative in this digital world. I'm eager to merge my expertise with your organization's mission, where together we can take things to the next level.</p>
+                    </div>
+                    <div class="editable hide">
+                      <textarea id="editor_summary"><p>The great thing about <strong>MY INDUSTRY</strong> is that it's always improving and making new strides. With over <strong>YEARS </strong>of experience in this industry, my passion has yet to diminish. During my tenure, I've seen this sector adapt and become innovative in this digital world. I'm eager to merge my expertise with your organization's mission, where together we can take things to the next level.</p></textarea>
+                    </div>
+                  </div>
+                  <div class="card-action actions right-align hide">
+                    <button class="cancel-btn btn-flat">Cancel</button>
+                    <button class="btn waves-effect waves-light">Update</button>
+                  </div>
+                </div>
+
+                <!-- Skills -->
+                <div class="card build-section scrollspy" id="skills">
+                  <div class="card-content">
+                    <span class="card-title">Skills</span> 
+                    <div class="viewable">
+                      <div class="content-listing hide" id="skills_listing">
+                        
+                      </div>
+                      
+                      <div class="spacing"></div>
+                      <div class="center-align">
+                        <button class="btn btn-simple" id="btn_add_skills" onclick="$('#add_skills, #skills_actions').removeClass('hide'); $(this).addClass('hide')"> + Add Skills</button>
+                      </div>
+                      
+                    </div>
+                    <div class="editable hide" id="add_skills">
+                      <div class="row">
+                        <div class="input-field col s6">
+                          <input id="skill_txt" type="text" required >
+                          <label for="skill_txt">Skill</label>
+                        </div>
+                        <div class="input-field col s6">
+                          <select id="skill_lvl">
+                            <option value="1" selected>Beginner</option>
+                            <option value="2">Intermediate</option>
+                            <option value="3">Advanced</option>
+                            <option value="4">Expert</option>
+                          </select>
+                          <label for="skill_lvl">Level</label>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="card-action actions right-align hide" id="skills_actions">
+                    <button class="cancel-btn btn-flat" onclick="$('#add_skills, #skills_actions').addClass('hide');$('#btn_add_skills').removeClass('hide');return false;">Cancel</button>
+                    <button class="btn waves-effect waves-light" onclick="fnAddSkills()">ADD</button>
+                  </div>
+                </div>
+                <!-- Skills ends -->
+
+                <!-- Certifications -->
+                <div class="card build-section scrollspy" id="certifications">
+                  <div class="card-content">
+                    <span class="card-title">Certifications</span> 
+                    <div class="viewable">
+                      <div class="content-listing hide" id="certification_listing">
+                        
+                      </div>
+                      
+                      <div class="spacing"></div>
+                      <div class="center-align">
+                        <button class="btn btn-simple" id="btn_add_certification" onclick="$('#add_certification, #certification_actions').removeClass('hide'); $(this).addClass('hide')"> + Add Certification</button>
+                      </div>
+                      
+                    </div>
+                    <div class="editable hide" id="add_certification">
+                      <div class="row">
+                        <div class="input-field col s12">
+                          <input id="certification_txt" type="text" required >
+                          <label for="certification_txt">Certification</label>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="card-action actions right-align hide" id="certification_actions">
+                    <button class="cancel-btn btn-flat" onclick="$('#add_certification, #certification_actions').addClass('hide');$('#btn_add_certification').removeClass('hide');return false;">Cancel</button>
+                    <button class="btn waves-effect waves-light" onclick="fnAddCertification()">ADD</button>
+                  </div>
+                </div>
+                <!-- Certifications ends -->
+
+
+                <div class="card build-section scrollspy" id="employment">
+
+                  <div class="card-content">
+                    <span class="card-title">Work Experience</span> 
+                    <div class="viewable">
+                      <div class="content-listing hide" id="employment_listing">
+                        <div class="s-item">
+                          <div class="s-actions">
+                            <button class="btn btn-small">Edit</button> 
+                            <button class="btn btn-small delete-btn">Delete</button> 
+                          </div>
+                          <div class="s-title"><i class="material-icons">reorder</i> Front end developer</div>
+                          <div class="s-others">
+                            ABC Technologies, Washington DC, USA <br>
+                            August 2015 - August 2016
+                          </div>
+                          <div class="s-desc">
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cumque ad laborum.
+                          </div>
+                        </div>
+                      </div>
+                      
+                      <div class="spacing"></div>
+                      <div class="center-align">
+                        <button class="btn btn-simple" id="btn_add_employment" onclick="$('#add_employment, #employment_actions').removeClass('hide'); $(this).addClass('hide')"> + Add Work Experience</button>
+                      </div>
+                      
+                    </div>
+                    <div class="editable hide" id="add_employment">
+                      <div class="row">
+                        <div class="input-field col s6">
+                          <input value="" id="job_title" type="text">
+                          <label for="job_title">Job Title</label>
+                        </div>
+                        <div class="input-field col s6">
+                          <input value="" id="company" type="text">
+                          <label for="company">Company</label>
+                        </div>
+                      </div>
+                      <div class="row">
+                        <div class="input-field col s6">
+                          <input value="" id="job_location" type="text">
+                          <label for="job_location">Location</label>
+                        </div>
+                        <div class="input-field col s6">
+                          <input type="checkbox" id="presently_employed" />
+                          <label for="presently_employed">Presently Employed</label>
+                        </div>
+                      </div>
+                      <div class="row">
+                        <div class="input-field col s6">
+                          <input class="datepicker" id="start_date" type="date">
+                          <label for="start_date">Start Date</label>
+                        </div>
+                        <div class="input-field col s6">
+                          <input type="date" id="end_date" class="datepicker">
+                          <label for="end_date">End Date</label>
+                        </div>
+                      </div>
+                      <div class="row">
+                        <div class="input-field col s12">
+                          <textarea id="editor_job_desc">This is the place for a brief summary of your key responsibilities and most stellar accomplishments.</textarea>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="card-action actions right-align hide" id="employment_actions">
+                    <button class="cancel-btn btn-flat" onclick="$('#add_employment, #employment_actions').addClass('hide');$('#btn_add_employment').removeClass('hide');return false;">Cancel</button>
+                    <button class="btn waves-effect waves-light" onclick="$('#employment_listing').removeClass('hide')">ADD</button>
+                  </div>
+                </div>
+
+                <!-- Education -->
+                <div class="card build-section scrollspy" id="education">
+                  <div class="card-content">
+                    <span class="card-title">Education</span> 
+                    <div class="viewable">
+                      <div class="content-listing hide" id="education_listing">
+                        <div class="s-item">
+                          <div class="s-actions">
+                            <button class="btn btn-small">Edit</button> 
+                            <button class="btn btn-small delete-btn">Delete</button> 
+                          </div>
+                          <div class="s-title"><i class="material-icons">reorder</i> MBA</div>
+                          <div class="s-others">
+                            ABC College <br>
+                            Graduated: August 2006
+                          </div>
+                          <div class="s-desc">
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cumque ad laborum, velit, nemo excepturi blanditiis tenetur aliquid nobis sunt facilis.
+                          </div>
+                        </div>
+                      </div>
+                      
+                      <div class="spacing"></div>
+                      <div class="center-align">
+                        <button class="btn btn-simple" id="btn_add_education" onclick="$('#add_education, #education_actions').removeClass('hide'); $(this).addClass('hide')"> + Add Education</button>
+                      </div>
+                      
+                    </div>
+                    <div class="editable hide" id="add_education">
+                      <div class="row">
+                        <div class="input-field col s6">
+                          <input value="" id="school" type="text">
+                          <label for="school">School Name</label>
+                        </div>
+                        <div class="input-field col s6">
+                          <input value="" id="school_location" type="text">
+                          <label for="school_location">Location</label>
+                        </div>
+                      </div>
+                      <div class="row">
+                        <div class="input-field col s12">
+                          <input value="" id="degree" type="text">
+                          <label for="degree">High School, Degree or Major</label>
+                        </div>
+                      </div>
+                      <!-- <div class="row">
+                        <div class="input-field col s6">
+                          <input id="compl_date" type="date" class="datepicker">
+                          <label for="compl_date">Completion Date</label>
+                        </div>
+                      </div> -->
+                      <div class="row">
+                        <div class="input-field col s12">
+                          <label for="editor_school_1">Description</label>
+                          <textarea id="editor_school_1">You might want to include your GPA here and a brief summary of relevant coursework, awards, and honors.</textarea>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="card-action actions right-align hide" id="education_actions">
+                    <button class="cancel-btn btn-flat" onclick="$('#add_education, #education_actions').addClass('hide');$('#btn_add_education').removeClass('hide');return false;">Cancel</button>
+                    <button class="btn waves-effect waves-light" onclick="$('#education_listing').removeClass('hide')">ADD</button>
+                  </div>
+                </div>
+                <!-- Education ends -->
+
+
+                <div class="card build-section scrollspy" id="references">
+                  <a class="btn-flat edit-btn waves-effect waves-teal"><i class="material-icons left">mode_edit</i>Edit</a>
+                  <div class="card-content">
+                    <span class="card-title">References</span> 
+                    <div class="viewable">
+                      <div class="content-listing hide" id="reference_listing">
+                        <div class="s-item">
+                          <div class="s-actions">
+                            <button class="btn btn-small">Edit</button> 
+                            <button class="btn btn-small delete-btn">Delete</button> 
+                          </div>
+                          <div class="s-title"><i class="material-icons">reorder</i> Steve Smith</div>
+                          <div class="s-others">
+                            Project Manager<br>
+                            ABC Private Ltd.,<br>
+                            steeve@gmail.com <br>
+                            95489549959 
+                          </div>
+                        </div>
+                      </div>
+                      
+                      <div class="spacing"></div>
+                      <div class="center-align">
+                        <button class="btn btn-simple" id="btn_add_reference" onclick="$('#add_reference, #reference_actions').removeClass('hide'); $(this).addClass('hide')"> + Add Reference</button>
+                      </div> 
+                    </div>
+                    <div class="editable hide" id="add_reference">
+                      <div class="row">
+                        <div class="input-field col s12">
+                          <input value="" id="ref_name" type="text">
+                          <label for="ref_name">Full Name</label>
+                        </div>
+                      </div>
+                      <div class="row">
+                        <div class="input-field col s6">
+                          <input value="" id="ref_job_title" type="text">
+                          <label for="ref_job_title">Job Title</label>
+                        </div>
+                        <div class="input-field col s6">
+                          <input value="" id="ref_company" type="text">
+                          <label for="ref_company">Company / Organization</label>
+                        </div>                      
+                      </div>
+                      <div class="row">
+                        <div class="input-field col s6">
+                          <input value="" id="ref_phone" type="text">
+                          <label for="ref_phone">Phone number</label>
+                        </div>
+                        <div class="input-field col s6">
+                          <input value="" id="ref_email" type="email">
+                          <label for="ref_email">Business Email</label>
+                        </div>
+                      </div>
+
+                    </div>
+                  </div>
+                  <div class="card-action actions right-align hide" id="reference_actions">
+                    <button class="cancel-btn btn-flat" onclick="$('#add_reference, #reference_actions').addClass('hide');$('#btn_add_reference').removeClass('hide');return false;">Cancel</button>
+                    <button class="btn waves-effect waves-light" onclick="$('#reference_listing').removeClass('hide')">ADD</button>
+                  </div>
+                </div>
+
+                <div class="clearfix"></div>
+              </div>
+
+              <div class="profile-footer">
+                <div class="form-buttons">
+                  <!-- <a class="btn-flat " href="#" onclick="goBack(4)">Back</a> -->
+                  <a class="btn waves-effect waves-light" href="preview-resume.html"><i class="material-icons left">visibility</i> Preview Resume
+                  </a>
+                </div>
+                <div class="clearfix"></div>
+                <small>
+                  Data Collected:  |  Account creation: 20 Aug 2016  |  Last Login: 04 Sep 2016
+                </small>
+              </div>
+
+            </div>
+            <div class="col hide-on-small-only m3">
+              <ul class="section table-of-contents">
+                <li><a href="#contact_details">Contact Details</a></li>
+                <li><a href="#summary">Professional Statement</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#certifications">Certifications</a></li>
+                <li><a href="#employment">Work Experience</a></li>
+                <li><a href="#education">Education</a></li>
+                <li><a href="#references">References</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+      </div>
+      
+
+    </div>
+  </div>
+
+  <footer class="page-footer teal">
+    <div class="container">
+      <div class="row">
+        <div class="col l6 s12">
+          <h5 class="white-text">Company Bio</h5>
+          <p class="grey-text text-lighten-4">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Blanditiis iure porro ipsa quos cum aliquam adipisci, excepturi sed obcaecati reprehenderit quam labore architecto.</p>
+
+
+        </div>
+        <div class="col l3 s12">
+          <h5 class="white-text">Settings</h5>
+          <ul>
+            <li><a class="white-text" href="#!">Link 1</a></li>
+            <li><a class="white-text" href="#!">Link 2</a></li>
+            <li><a class="white-text" href="#!">Link 3</a></li>
+            <li><a class="white-text" href="#!">Link 4</a></li>
+          </ul>
+        </div>
+        <div class="col l3 s12">
+          <h5 class="white-text">Connect</h5>
+          <ul>
+            <li><a class="white-text" href="#!">Link 1</a></li>
+            <li><a class="white-text" href="#!">Link 2</a></li>
+            <li><a class="white-text" href="#!">Link 3</a></li>
+            <li><a class="white-text" href="#!">Link 4</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="footer-copyright">
+      <div class="container">
+        &copy; 2016 Comp Name, All rights reserved
+      </div>
+    </div>
+  </footer>
+
+  <!-- Lising Templates -->
+  <div class="hide">
+    <div id="tpl_skills">
+      <div class="s-item">
+        <div class="s-actions">
+          <button class="btn btn-small">Edit</button> 
+          <button class="btn btn-small delete-btn">Delete</button> 
+        </div>
+        <div class="s-title"><i class="material-icons">reorder</i> {{txt_skill}}</div>
+        <div class="s-others">
+          {{txt_level}}
+        </div>
+      </div>
+    </div>
+
+    <div id="tpl_certification">
+      <div class="s-item">
+        <div class="s-actions">
+          <button class="btn btn-small">Edit</button> 
+          <button class="btn btn-small delete-btn">Delete</button> 
+        </div>
+        <div class="s-title"><i class="material-icons">reorder</i> {{txt_certification}}</div>
+      </div>
+    </div>
+  </div>
+  <!-- Lising Templates ends-->
+
+  <!--  Scripts-->
+  <script src="js/jquery.min.js"></script>
+  <script src="js/jquery.validate.js"></script>
+  <script src="js/materialize.js"></script>
+  <script src="editor/trumbowyg.min.js"></script>
+
+  <script>
+    $(document).ready(function() {
+      $('.scrollspy').scrollSpy();
+
+      $('select').material_select();
+       $('.datepicker').pickadate({
+        selectMonths: true, 
+        selectYears: 25,
+        max:true
+      });
+
+      $('.tooltipped').tooltip({delay: 50});
+
+      fnRenderBuilderResumeComponents();
+
+    });
+
+    var arr_levels = ["","Beginner", "Intermediate", "Advanced", "Expert"];
+    var tpl_skills = $("#tpl_skills").html();
+    var tpl_certification = $("#tpl_certification").html();
+    var cnt_skill = 1;
+
+    function fnAddSkills(){
+      var skill = $("#skill_txt").val();
+      var lvl = $("#skill_lvl").val();
+      if(cnt_skill >= 5){
+        $("#skills_actions, #add_skills").addClass('hide');
+      }
+      if(skill == "") return false;
+      var txt = tpl_skills.replace( /{{txt_skill}}/g, skill );
+      txt = txt.replace( /{{txt_level}}/g, arr_levels[lvl] );
+      $('#skills_listing').append(txt).removeClass('hide');
+      cnt_skill++;
+    }
+
+    function fnAddCertification(){
+      var certification = $("#certification_txt").val();
+      if(certification == "") return false;
+      var txt = tpl_certification.replace( /{{txt_certification}}/g, certification );
+      $('#certification_listing').append(txt).removeClass('hide');
+    }
+
+    function  fnRenderBuilderResumeComponents(){
+      var $obj = $('.table-of-contents');
+      var top = $obj.offset().top - parseFloat($obj.css('marginTop').replace(/auto/, 0));
+
+      $(window).scroll(function (event) {
+        var y = $(this).scrollTop();
+        if (y >= top) {
+          $obj.addClass('fixed');
+        } else {
+          $obj.removeClass('fixed');
+        }
+      });
+
+      $(".build-section .edit-btn").click(function(event) {
+        $(this).addClass('hide');
+        $(this).parent().find('.viewable').addClass('hide');
+        $(this).parent().find('.editable, .actions').removeClass('hide');
+      });
+
+      $(".build-section .cancel-btn").click(function(event) {
+        $(this).parent().parent().find('.viewable, .edit-btn').removeClass('hide');
+        $(this).parent().parent().find('.editable, .actions').addClass('hide');
+      });
+
+      $('#editor_summary, #editor_school_1, #editor_job_desc').trumbowyg({
+        btns: ['viewHTML',
+        '|', 'formatting',
+        '|', 'btnGrp-design',
+        '|', 'link',
+        '|', 'btnGrp-justify',
+        '|', 'btnGrp-lists',
+        '|', 'horizontalRule'],
+        autogrow:true
+      });
+      
+    }
+
+  </script>
+</body>
