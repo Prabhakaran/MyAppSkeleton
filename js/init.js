@@ -84,7 +84,8 @@ function gotoStep(num){
        }
       	break;
       case 5:
-        location.href = "profile.html"
+        var cat = $('#category').val();
+        location.href = "profile.html?category="+cat
         /*$(".select-category").animate({"left":"-100%"}, function(){
           $(this).slideUp('slow', function(){
             $(".bulid-resume").slideDown('fast', function(){
