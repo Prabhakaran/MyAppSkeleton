@@ -6,6 +6,7 @@
   <title>Resume Builder</title>
 
   <!-- CSS  -->
+  
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
   <link href="css/m-icon.css" type="text/css" rel="stylesheet" />
   <link href="css/materialize.css" type="text/css" rel="stylesheet" />
@@ -13,6 +14,37 @@
   <link href="css/style.css" type="text/css" rel="stylesheet" />
   <link href="css/steps.css" type="text/css" rel="stylesheet" />
   <link href="css/responsive.css" type="text/css" rel="stylesheet" />
+
+  <style>
+        .autocomplete {
+            display: -ms-flexbox;
+            display: flex;
+        }
+        .autocomplete .ac-users {
+            padding-top: 10px;
+        }
+        .autocomplete .ac-users .chip {
+            -ms-flex: auto;
+            flex: auto;
+            margin-bottom: 10px;
+            margin-right: 10px;
+        }
+        .autocomplete .ac-users .chip:last-child {
+            margin-right: 5px;
+        }
+        .autocomplete .ac-dropdown .ac-hover {
+            background: #eee;
+        }
+        .autocomplete .ac-input {
+            -ms-flex: 1;
+            flex: 1;
+            min-width: 150px;
+            padding-top: 0.6rem;
+        }
+        .autocomplete .ac-input input {
+            height: 2.4rem;
+        }
+    </style>
 </head>
 <body>
   <div class="navbar-fixed">
@@ -377,8 +409,16 @@
         <div class="form-container-sm">
           <div class="row">
             <div class="input-field col s12">
-              <input id="category" type="text">
-              <label for="category" >Select Category</label>
+              <!-- <input id="category" type="text"> -->
+                                  <div class="autocomplete" id="single">
+
+              <div class="ac-input">
+              <input type="text" id="category"  placeholder="Please input some letters" data-activates="singleDropdown" data-beloworigin="true" autocomplete="off">
+              </div>
+              </div>
+                        </div>
+               <ul id="singleDropdown" class="dropdown-content ac-dropdown"></ul>
+              <!-- <label for="category" >Select Category</label> -->
             </div>
           </div>
           <div class="row form-buttons">
@@ -444,6 +484,7 @@
 
   <!--  Scripts-->
   <script src="js/jquery.min.js"></script>
+  <script src="js/jquery.materialize-autocomplete.js"></script>
   <script src="js/jquery.validate.js"></script>
   <script src="js/materialize.js"></script>
   <script src="js/init.js"></script>
@@ -451,6 +492,90 @@
 
   <script>
     $(document).ready(function() {
+    //$('select').material_select();
+
+    var single = $('#category').materialize_autocomplete({
+            multiple: {
+                enable: false
+            },
+            dropdown: {
+                el: '#singleDropdown'
+            }
+        });
+
+
+    var resultCache = {
+            'A': [
+                {
+                    id: 'Accounting',
+                    text: 'Accounting'
+                },
+                {
+                    id: 'Airlines',
+                    text: 'Airlines'
+                }
+            ],
+            'B': [
+                {
+                    id: 'Banking',
+                    text: 'Banking'
+                },
+                {
+                    id: 'Biotechnology',
+                    text: 'Biotechnology'
+                }
+            ],
+            'AC': [
+                {
+                    id: 'Accounting',
+                    text: 'Accounting'
+                }
+            ],
+            'ACC': [
+                {
+                    id: 'Accounting',
+                    text: 'Accounting'
+                }
+            ],
+            'BA': [
+                {
+                    id: 'Banking',
+                    text: 'Banking'
+                }
+            ],
+            'BIO': [
+                {
+                    id: 'Biotechnology',
+                    text: 'Biotechnology'
+                }
+            ],
+            'C': [
+                {
+                    id: 'Chemicals',
+                    text: 'Chemicals'
+                },
+                {
+                    id: 'Computer Hardware',
+                    text: 'Computer Hardware'
+                }
+            ],
+            'CH': [
+                {
+                    id: 'Chemicals',
+                    text: 'Chemicals'
+                }
+            ],
+            'CO': [
+                {
+                    id: 'Computer Hardware',
+                    text: 'Computer Hardware'
+                }
+            ],
+        };
+
+        single.resultCache = resultCache;
+        
+
 
       $(".template-cards .mc-card").click(function(event) {
 
