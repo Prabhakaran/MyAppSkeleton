@@ -1,1 +1,94 @@
-gg
+Case Study: 
+  
+TopGit — finding the best github projects! 
+  
+Develop a pseudo front end application which would let the users help list and browse top github projects based on desired languages conveniently. 
+  
+[Minimum Requirement]  (entry level) 
+  
+— Use of Web API to fetch repo details. 
+Utilize API parameter: q=stars:>=1000 language:Javascript
+stars                — number of stars given to respective repository.
+language         — programming language used in repository.
+Utilize Response Parameters:
+repos[] —[ total_count, items[] — full_name, html_url, description, language ]. 
+Implement functionality to search(api call for desired language) and list results based on different languages.
+  
+— Visually interactive responsive design listing all the repositories. 
+— Submit Screenshot, Source code & Instructions. 
+  
+[Plus Point] (intermediate) 
+  
+— A feature to Search (via language). 
+— Implement  Seek feature (to filter result through range of Stars given to repositories). 
+— Display and integrate repository details including name, html_url, description, and language. 
+— Link html_url to Github’s repo URL. (Should open in new window | target="_blank") 
+  
+[Extra Work] (Experienced / wizard) 
+  
+— Display and keep track of response Header X-RateLimit-Remaining / X-RateLimit-Limit. 
+— Add autocomplete feature to Search programming languages conveniently. 
+— Custom elegant design, fonts and icons to make web app more user-friendly. 
+— You may add portfolio activity comprising awesome work you have done on web application(s). 
+— Use your imagination and add features which would make things easier for end users. 
+[Guide] 
+  
+— Repository API:https://api.github.com/search/repositories?q=language:javascript&stars:>=1000 
+            
+Github is having API rate limit. For more info on this, read here :  
+https://developer.github.com/v3/#rate-limiting 
+Sample JSON (in case candidate run out of API limit and would wish to debug their creation): http://pastebin.com/raw/prpP7zJc
+List of programming languages: https://gist.githubusercontent.com/mayurah/5a4d45d12615d52afc4d1c126e04c796/raw/ccbba9bb09312ae66cf85b037bafc670356cf2c9/languages.json
+  
+— Ideal Frontend Stack: 
+* Any of your favourite JS Framework: Javascript (Angular JS), jQuery, HTML, CSS.
+* Custom CSS, Good if you can work around Bootstrap or Material Design.
+* Optional: Typography, Subtle pattern, Custom Icons.
+— PS: Application can be built with use of client-side scripting and need not require any backend. 
+— HTML5 Local Storage: http://html5demos.com/storage 
+— For icons and subtle texture: 
+http://glyphsearch.com/
+http://subtlepatterns.com/thumbnail-view/
+http://codebeautify.org/jsonviewer
+http://www.flaticon.com/categories
+  
+[Wireframe MVP / Reference Structure] 
+Mockup image with instructions
+App Page I — Home page comprising list of repository and relevant details.
+   
+
+Note:  Mockup design is just a reference made available to kickstart the design process, you are free to come up with your own design, we always admire creativity. 
+  
+API Specs 
+API Status: https://hackerearth.0x10.info/api/uptime 
+Supports GET/POST/PUT requests on HTTP as well as HTTPS.
+Output Response: JSON, CSV or XML
+  
+Example urls: 
+https://api.github.com/search/repositories?sort=stars&order=desc&q=created:%222015-09-02%20..%202016-09-01%22
+https://example.com/api/problems?type=json&query=api_hits
+  
+HTTP Header: 
+access-control-allow-headers:Origin, X-Requested-With, Content-Type, Accept
+access-control-allow-methods:GET, POST, PUT
+access-control-allow-origin: *
+server: cloudflare-nginx
+  
+Structure / Data Parameters: 
+problems[] —[ name, tags, rating, solved_by, parent_challenge, url, image ].
+total_count        — total number of repository in respective language
+Items[]              — array of repository
+full_name          — name of repository
+html_url            — link to a repository
+description        — description of a repository
+language           — language in which repo is written.
+  
+Note : While executing the project, the root folder should have the file name as index.html.  In case if you have used different file name or folder structure, then append the file name/folder path directly in URL while executing the project. 
+  
+Example 1 : 
+  
+http://digitaluniversity.cognizant.e-box.co.in:8080/deploy/1479214557302_1/filename.html 
+  
+Example 2 : 
+  
+http://digitaluniversity.cognizant.e-box.co.in:8080/deploy/1479214557302_1/folder_name/filename.html
